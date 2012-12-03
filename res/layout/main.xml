@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:layout_width="150dip"
+        android:layout_height="fill_parent"
+        class="ueu.org.unibertsitatea.net.zini.TitulazioZerrendaFragment" ></fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="ueu.org.unibertsitatea.net.zini.TitulazioInfoFragment" >
+        <!-- Preview: layout=@layout/details -->
+    </fragment>
+
+</LinearLayout>

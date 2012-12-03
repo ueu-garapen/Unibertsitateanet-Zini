@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/txuria"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:gravity="fill"
+    android:layout_gravity="fill"
+    android:padding="10.0dip" >
+	<!-- LinearLayout android:gravity="center_horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"-->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_rounded"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:background="@drawable/gradientea_back"
+        android:padding="2.0dip" >
+
+        <TextView android:id="@+id/izenburua_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" style="@style/intro_blurb_info" />
+
+        <TextView
+            android:id="@+id/ikasketa_label"
+            style="@style/label_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/izenburua_info"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/ikasketa_label_info" />
+
+        <TextView android:id="@+id/ikasketa_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/ikasketa_label" style="@style/view_text_info" />
+
+        <TextView
+            android:id="@+id/ezaugarriak_label_info"
+            style="@style/label_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ikasketa_info"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/ezaugarriak_label_info" />
+
+        <TextView android:id="@+id/ezaugarriak_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/ezaugarriak_label_info" style="@style/view_text_info" />
+
+        <TextView
+            android:id="@+id/kredituak_label_info"
+            style="@style/label_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ezaugarriak_info"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/kredituak_label_info" />
+
+        <TextView android:id="@+id/kredituak_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/kredituak_label_info" style="@style/view_text_info" />
+
+        <TextView
+            android:id="@+id/unibertsitatea_label_info"
+            style="@style/label_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kredituak_info"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/unibertsitatea_label_info" />
+
+        <TextView android:id="@+id/unibertsitatea_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/unibertsitatea_label_info" style="@style/view_text_info" />
+
+        <TextView
+            android:id="@+id/unibertsitatea_mota_label_info"
+            style="@style/label_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unibertsitatea_info"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/unibertsitatea_mota_label_info" />
+
+        <TextView android:id="@+id/unibertsitatea_mota_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/unibertsitatea_mota_label_info" style="@style/view_text_info" />
+
+        <TextView
+            android:id="@+id/fakultatea_label_info"
+            style="@style/label_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unibertsitatea_mota_info"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/fakultatea_label_info" />
+
+        <TextView android:id="@+id/fakultatea_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/fakultatea_label_info" style="@style/view_text_info" />
+
+        <TextView
+            android:id="@+id/herria_label_info"
+            style="@style/label_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fakultatea_info"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/herria_label_info" />
+
+        <TextView android:id="@+id/herria_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/herria_label_info" style="@style/view_text_info" />
+
+        <TextView
+            android:id="@+id/lurraldea_label_info"
+            style="@style/label_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/herria_info"
+            android:layout_marginBottom="1.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/lurraldea_label_info" />
+
+        <TextView
+            android:id="@+id/lurraldea_info"
+            style="@style/view_text_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lurraldea_label_info"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip" />
+		<TextView
+            android:id="@+id/info_gehiago"
+            style="@style/label_info"
+            android:text="Informazio gehiago"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lurraldea_info"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:paddingBottom="20dp"
+            android:textColorLink="@color/laranja" />
+
+        <TextView
+            android:id="@+id/empty"
+            style="@style/intro_blurb"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="" />
+
+    </RelativeLayout>
+<!-- /LinearLayout-->
+</ScrollView>

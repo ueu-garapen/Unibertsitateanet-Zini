@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/TitulazioInfoFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="ueu.org.unibertsitatea.net.zini.TitulazioInfoFragment" />
+
+</LinearLayout>

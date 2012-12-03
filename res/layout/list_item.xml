@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp" 
+    android:background="@color/list_bg">
+	
+	<TextView android:id="@+id/izenburua"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16dp"
+    android:paddingLeft="3dp"
+    android:textColor="@drawable/kolore_hautatzailea_laranja" android:textStyle="bold"/>
+	
+	<!--  TextView android:id="@+id/ikasketa" android:gravity="left"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textSize="12sp" android:textColor="#000"
+		android:layout_below="@id/izenburua"
+		android:paddingLeft="3dp" /-->	
+		
+	<TextView
+	    android:id="@+id/fakultatea"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/izenburua"
+	    android:textColor="@drawable/kolore_hautatzailea_laranja"
+	    android:textSize="12sp"
+	    android:paddingLeft="3dp" />
+
+	<TextView
+	    android:id="@+id/helbidea"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/fakultatea"
+	    android:textColor="#000"
+	    android:textSize="12sp"
+	    android:paddingLeft="3dp" />
+	
+
+</RelativeLayout>

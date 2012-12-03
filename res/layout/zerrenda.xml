@@ -1,0 +1,34 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/txuria"
+  android:paddingLeft="0dp"
+  android:paddingRight="0dp">
+
+  <ListView
+    android:id="@android:id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:drawSelectorOnTop="False"
+    android:cacheColorHint="@color/txuria"
+    android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+     />
+  
+  <TextView
+      android:id="@+id/hutsik"
+      android:layout_width="fill_parent"
+      android:text="Ez da ezer aurkitu"
+          android:layout_height="wrap_content"
+    android:background="@color/txuria"
+    android:textColor="@color/laranja"
+	android:textSize="14sp"
+	android:paddingLeft="8dp"
+	android:paddingTop="8dp"
+	android:visibility="gone"
+      
+      />
+</LinearLayout>

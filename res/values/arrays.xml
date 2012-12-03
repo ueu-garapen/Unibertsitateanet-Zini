@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lurraldeak">
+        <item>Guztiak</item>
+        <item>Araba</item>
+        <item>Bizkaia</item>
+        <item>Gipuzkoa</item>
+        <item>Lapurdi</item>
+        <item>Nafarroa</item>
+    </string-array>
+    <string-array name="titulazio_motak">
+        <item>Guztiak</item>
+        <item>Gradu bikoitza</item>
+        <item>Gradua</item>
+    </string-array>
+</resources>

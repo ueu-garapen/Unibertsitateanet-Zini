@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="intro_blurb">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffFF4500</item>
+    </style>
+    <style name="label">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffFF4500</item>
+    </style>
+    <style name="edit_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="view_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffcccccc</item>
+    </style>
+    <style name="spinner_item">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="spinner_item_dropdown">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffFF4500</item>
+    </style>
+    <style name="review_list">
+        <item name="android:background">#ff000000</item>
+    </style>
+        <style name="label_info">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+        <style name="view_text_info">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+        <style name="intro_blurb_info">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffFF4500</item>
+    </style>
+</resources>

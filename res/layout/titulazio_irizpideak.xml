@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/txuria"
+    android:gravity="center_horizontal"
+    android:padding="10.0dip" >
+
+    <TextView android:id="@+id/sarrera_titulua" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="15.0dip" android:text="@string/sarrera_titulua" style="@style/intro_blurb" />
+    <EditText android:id="@+id/bilaketa_irizpidea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/sarrera_titulua" android:inputType="text" style="@style/edit_text" />
+    <TextView android:id="@+id/lurraldea_etiketa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/lurraldea_etiketa" android:layout_below="@id/bilaketa_irizpidea" style="@style/label" />
+    <Spinner android:id="@+id/lurraldea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/lurraldea_etiketa" />
+    <TextView android:id="@+id/titulazioa_mota_etiketa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/titulazioa_mota_etiketa" android:layout_below="@id/lurraldea" style="@style/label" />
+    <Spinner android:id="@+id/titulazioa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/titulazioa_mota_etiketa" />
+    <Button android:id="@+id/get_titulazioak_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/get_titulazioak_button_label" android:layout_below="@id/titulazioa" />
+</RelativeLayout>

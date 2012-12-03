@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_titulazioak">Titulazio-bilatzailea - Titulazioak</string>
+    <string name="hello">Hello World, UnibertsitateanetActivity!</string>
+    <string name="app_name">Zer, non ikasi</string>
+    <string name="sarrera_titulua">Titulazio-bilatzailea</string>
+    <string name="lurraldea_etiketa">Lurraldea</string>
+    <string name="titulazioa_mota_etiketa">Tutulazio-mota:</string>
+    <string name="get_titulazioak_button_label">Titulazioak bilatu</string>
+    <string name="menu_get_titulazioak">Bilatu titulazioak</string>
+    <string name="alert_label">Barkatu</string>
+    <string name="titulazio_mota_ez_zehaztuta_mezua">Titulazioaren izenburua zehaztu behar da</string>
+    <string name="menu_get_next_page">Hurrengoa</string>
+    <string name="menu_change_criteria">Bilaketa-irizpidea aldatu</string>
+    <string name="app_name_titulazioa">Titulazioaren informazioa</string>
+    <string name="ikasketa_label_info">Ikasketa</string>
+    <string name="ezaugarriak_label_info">Ezaugarriak</string>
+    <string name="kredituak_label_info">Kredituak</string>
+    <string name="unibertsitatea_label_info">Unibertsitatea</string>
+    <string name="unibertsitatea_mota_label_info">Unibertsitate-mota</string>
+    <string name="fakultatea_label_info">Fakultatea</string>
+    <string name="herria_label_info">Herria</string>
+    <string name="lurraldea_label_info">Lurraldea</string>
+    <string name="app_name_titulazio_info">Titulazioa</string>
+    <string name="zerrenda_hutsik">Ez dago zure irizpidea betetzen duen titulaziorik</string>
+</resources>
