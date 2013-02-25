@@ -52,14 +52,14 @@ public class TitulazioZerrendaProvider extends ContentProvider {
             + "/" + TITULAZIOAK_BASE_PATH);
 
     public static final String CONTENT_ITEM_TYPE = ContentResolver.CURSOR_ITEM_BASE_TYPE
-            + "/mt-tutorial";
+            + "/uninet-zini";
     public static final String CONTENT_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE
-            + "/mt-tutorial";
+            + "/uninet-zini";
 
     private static final UriMatcher sURIMatcher = new UriMatcher(
             UriMatcher.NO_MATCH);
 
-    private static final String DEBUG_TAG = "TutListProvider";
+    private static final String DEBUG_TAG = "UninetZerrendaProvider";
     static {
         sURIMatcher.addURI(AUTHORITY, TITULAZIOAK_BASE_PATH, TITULAZIOAK);
         sURIMatcher.addURI(AUTHORITY, TITULAZIOAK_BASE_PATH + "/#", TITULAZIOA_ID);

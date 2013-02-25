@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="laguntza">
+        <![CDATA[
+        <html><body style="background-color:white;color:#FF4500;">
+        <h1>Deskribapena</h1>
+        <p style="text-align:justify">"Zer, non ikasi" aplikazioa Euskal Herriko unibertsitateen graduko titulazioen bilgunea da. Bilatu intereseko duzun ikasketa hainbat modutan: jakintza-alorraren arabera, unibertsitatearen arabera, lurraldeka...
+Behin bilaketa-emaitzak aurrean dituzula, datu zehatzak kontsultatu ahal izango dituzu aurrean duzun zerrendako izenburuetan klik eginez. Aukeratuko graduaren informazio zehatza izango duzu pantaila aurrean.</p>
+		</body></html>
+		]]>
+    </string>
+</resources>

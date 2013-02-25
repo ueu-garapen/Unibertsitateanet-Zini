@@ -21,7 +21,9 @@ package ueu.org.unibertsitatea.net.zini;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+
 
 import ueu.org.unibertsitatea.net.zini.data.DbUtil;
 import info.guardianproject.database.sqlcipher.SQLiteException;
@@ -43,6 +45,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewParent;
@@ -162,12 +167,20 @@ public class HasierakoActivity extends Activity {
 		// Kalkulatu iraungitze-data
 		DateFormat dfm = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		Date uneko_data = new Date();
-		Date iraungitze_data;
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(uneko_data);
+		Integer uneko_urtea = calendar.get(Calendar.YEAR);
+		Date iraungitze_data = new Date();;
+		Date sortze_data;
+		
+		//iraungitze_data = new Date();
 		try {
+			//Titulazioen Datu basea urtero eguneratzen da otsailerako
+			iraungitze_data = new Date(dfm.parse(uneko_urtea.toString() + "-02-01 00:00:00").getTime());
 			// lortu DBaren sortze data eta gehitu iraupena lortzeko iraungitze
 			// data
-			iraungitze_data = new Date(dfm.parse(dbUtil.getIranugitzeData())
-					.getTime() + Konstanteak.DB_IRAUPENA);
+			sortze_data = new Date(dfm.parse(dbUtil.getIranugitzeData())
+					.getTime());
 		} catch (ParseException e) {
 			// Errorea egon bada DB-an dagoen dataren formatuarekin bueltatu
 			// uneko data eta horrela lokalean dagoen DBarekin jarraituko da
@@ -175,10 +188,11 @@ public class HasierakoActivity extends Activity {
 			// Printzipioz hau ez litzateke gertatu beharko data modu
 			// automatikoan sortzen delako DBa sortzean
 			e.printStackTrace();
-			iraungitze_data = new Date();
+			
+			sortze_data = new Date();
 		}
 		if (myCursor.getCount() <= 0
-				|| uneko_data.compareTo(iraungitze_data) > 0) { // DBa
+				|| (uneko_data.compareTo(iraungitze_data)>0 && sortze_data.compareTo(iraungitze_data) < 0)) { // DBa
 																// ez
 																// badago
 																// kargatuta
@@ -227,6 +241,37 @@ public class HasierakoActivity extends Activity {
 		}
 		
 	}
+	
+	// Menua XML fitxategia hasieratu (menu.xml)
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menua, menu);
+        return true;
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+        	case R.id.menu_laguntza:
+				Intent intent_laguntza = new Intent(getApplicationContext(),
+						Laguntza.class);
+				startActivity(intent_laguntza);        		
+        		return true;
+ 
+        	case R.id.menu_honiburuz:
+				Intent intent_honiburuz = new Intent(getApplicationContext(),
+						Honiburuz.class);
+				startActivity(intent_honiburuz);        		
+        		return true;
+  			
+        	default:
+        		return super.onOptionsItemSelected(item);
+        }
+    }	
 
 	private void handleGetTitulazioak() {
 		if (!validate()) {

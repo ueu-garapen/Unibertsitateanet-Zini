@@ -23,4 +23,7 @@
     <string name="lurraldea_label_info">Lurraldea</string>
     <string name="app_name_titulazio_info">Titulazioa</string>
     <string name="zerrenda_hutsik">Ez dago zure irizpidea betetzen duen titulaziorik</string>
+    <string name="menu_item_laguntza">Laguntza</string>
+    <string name="menu_item_honiburuz">Honi buruz</string>    
+    <string name="version">1.01</string>
 </resources>

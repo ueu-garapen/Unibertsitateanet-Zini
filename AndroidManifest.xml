@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ueu.org.unibertsitatea.net.zini"
+    android:versionCode="2"
+    android:versionName="@string/version" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission
+        android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:icon="@drawable/zini_logo"
+        android:label="@string/app_name" >
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity
+            android:name="HasierakoActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TitulazioZerrendaActivity"
+            android:label="Zer, non ikasi - Titulazio-zerrenda" />        
+        <activity
+            android:name=".TitulazioInfoActivity"
+            android:label="Zer, non ikasi - Titulazioa" />
+        <activity
+            android:name="Honiburuz"
+            android:label="Zer, non ikasi -- Honi buruz" >
+        </activity>
+        <activity
+            android:name="Laguntza"
+            android:label="Zer, non ikasi -- Laguntza" >
+        </activity>        
+        <provider
+            android:authorities="ueu.org.unibertsitatea.net.zini.data.TitulazioZerrendaProvider"
+            android:multiprocess="true"
+            android:name="ueu.org.unibertsitatea.net.zini.data.TitulazioZerrendaProvider"></provider>
+    </application>
+
+</manifest>
